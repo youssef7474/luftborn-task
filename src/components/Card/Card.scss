@@ -1,0 +1,77 @@
+.card{
+    position: relative;
+    width: fit-content;
+    .UpperPart{
+        width: 255px;
+        height: 160px;
+        border-radius: 10px;
+        @media(max-width:885px) {
+            width: 327px;
+            height: 160px;
+        }
+    }
+    .lower-Part-Contanier{
+        width: 255px;
+        height: 199px;
+        background-color: #1C204B;
+        border-radius: 10px;
+        position: absolute;
+        top: 40px;
+        .Title-Contanier{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .title-text{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21.33px;
+                color: #FFFFFF;
+            }
+        }
+        .dic-contaniner{
+            display: flex;
+            align-items: last baseline;
+            justify-content: space-around;
+            padding: 18px;
+            .mobile{
+                @media(max-width:885px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 15px;
+                    
+                }
+            }
+            .price{
+                font-weight: 300;
+                font-size: 39px;
+                line-height: 46.22px;
+                color: #FFFFFF;
+            }
+            .description{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14.22px;
+                color: #BBC0FF;
+                @media(max-width:885px) {
+                    font-size: 10px;
+                }
+            }
+            .instore{
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14.22px;
+                color: #FFFFFF;
+                @media(max-width:885px) {
+                    display: none;
+                }
+            }
+         
+        }
+        @media(max-width:885px) {
+            width: 327px;
+            height: 122px;
+        }
+    }
+  
+}
